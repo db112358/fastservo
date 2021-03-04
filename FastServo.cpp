@@ -6,13 +6,12 @@ FastServo::FastServo()
 }
 
 bool FastServo::init(	volatile int16_t * enc_pos,
-						uint8_t pwm_ch,
-						bool reverse,
-						uint8_t en_pin,
-						int16_t v_max,
-						int16_t v_min,
-						int16_t a_max
-						)
+			uint8_t pwm_ch,
+			bool reverse,
+			uint8_t en_pin,
+			int16_t v_max,
+			int16_t v_min,
+			int16_t a_max )
 {
 	// pwm channel sanity check
 	if (pwm_ch < 1 || pwm_ch > 4)
